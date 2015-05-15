@@ -2,7 +2,7 @@
 var spawn = require('child_process').spawn;
 
 var workingDir = process.env.WORKING_DIR || process.env.PACKAGE_DIR || './';
-var args = ['test-packages', '--driver-package', 'respondly:test-reporter', '-p', 10015];
+var args = ['test-packages', '--once', '--driver-package', 'respondly:test-reporter', '-p', 10015];
 
 
 if (typeof process.env.METEOR_RELEASE !== 'undefined' &&
